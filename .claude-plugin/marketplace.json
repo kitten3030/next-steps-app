@@ -1,5 +1,13 @@
 {
   "name": "next-steps-app",
-  "owner": { "name": "kitten3030" },
-  "plugins": [{ "name": "next-steps-app", "source": "./" }]
+  "description": "next-steps-app: suggests up to three next prompts above the input box, in the terminal and the Claude desktop app.",
+  "owner": {
+    "name": "kitten3030"
+  },
+  "plugins": [
+    {
+      "name": "next-steps-app",
+      "source": "./"
+    }
+  ]
 }
