@@ -1,0 +1,5 @@
+{
+  "name": "next-steps-app",
+  "owner": { "name": "kitten3030" },
+  "plugins": [{ "name": "next-steps-app", "source": "./" }]
+}
