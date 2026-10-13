@@ -191,8 +191,6 @@ export const register: Register = (on, options) => {
 
     const frame = {
       flexDirection: 'column',
-      borderStyle: 'round',
-      borderColor: 'promptBorder',
       paddingX: 1,
       rowGap: blankBetween ? 1 : 0,
     } as const
@@ -202,7 +200,7 @@ export const register: Register = (on, options) => {
         <Box flexDirection="column">
           {below}
           <Box {...frame}>
-            <Text color="suggestion" bold>下一步</Text>
+            <Text color="inactive">{' '}下一步</Text>
             <Text color="inactive">思考中…</Text>
           </Box>
         </Box>
@@ -214,7 +212,7 @@ export const register: Register = (on, options) => {
       <Box flexDirection="column">
         {below}
         <Box {...frame}>
-          <Text color="suggestion" bold>下一步</Text>
+          <Text color="inactive">{' '}下一步</Text>
           {items.map((item, index) => {
             const pick = () => {
               show($, { kind: 'hidden' })
