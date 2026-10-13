@@ -223,8 +223,8 @@ export const register: Register = (on, options) => {
             }
             return (
               <Button plain key={`s${index}`} hotkey={String(index + 1)} label={item.label} onPress={pick}>
-                <Text color="suggestion" bold>{`${index + 1}  `}</Text>
-                <Text color="text">{item.label}</Text>
+                <Text color="claude" bold hover={{ scope: `ns${index}`, color: 'claude', inverse: false }}>{`${index + 1}  `}</Text>
+                <Text color="claude" hover={{ scope: `ns${index}`, color: 'claude', inverse: false }}>{item.label}</Text>
               </Button>
             )
           })}
